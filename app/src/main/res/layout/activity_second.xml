@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".second_activity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/currences"
+        android:layout_marginTop="100px"
+        android:textSize="23sp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="140px"
+        android:layout_marginTop="300px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/choose_curr"
+        android:textSize="16sp"
+        />
+    <Spinner
+        android:id="@+id/myspinner"
+        android:layout_width="800px"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400px"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <EditText
+        android:id="@+id/sum_value"
+        android:layout_width="800px"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="600px"
+        android:minHeight="48dp"
+        android:hint="@string/input_value"
+        />
+    <TextView
+        android:layout_width="800px"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="140px"
+        android:layout_marginTop="800px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/input_date"
+        android:textSize="16sp"
+        />
+    <DatePicker
+        android:id="@+id/mydate"
+        android:layout_width="800px"
+        android:layout_height="wrap_content"
+        android:datePickerMode="spinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="950px"
+        android:calendarViewShown="false"
+        />
+    <Button
+        android:id="@+id/next"
+        android:layout_width="800px"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/save_next"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="1650px"
+        />
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

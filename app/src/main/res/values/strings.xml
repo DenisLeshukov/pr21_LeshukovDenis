@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">prakt21_LeshukovDenis</string>
+    <string name="sign_in">Войти</string>
+    <string name="register">Регистрация</string>
+    <string name="input_login">Введите логин</string>
+    <string name="input_password">Введите пароль</string>
+    <string name="currences">Дневник валют</string>
+    <string name="choose_curr">Выберите валюту</string>
+    <string name="input_value">Введите сумму</string>
+    <string name="input_date">Выберите дату, когда вы обменивали валюту</string>
+    <string name="save_next">Сохранить и продолжить</string>
+    <string name="all_records">Все записи</string>
+    <string name="go_start">В начало</string>
+    <string name="error_reg">Введите логин или пароль</string>
+    <string name="error_sum">Введите сумму</string>
+    <string name="error_spin">Введите валюту</string>
+
+</resources>
