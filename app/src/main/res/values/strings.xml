@@ -8,7 +8,8 @@
     <string name="choose_curr">Выберите валюту</string>
     <string name="input_value">Введите сумму</string>
     <string name="input_date">Выберите дату, когда вы обменивали валюту</string>
-    <string name="save_next">Сохранить и продолжить</string>
+    <string name="save">Сохранить</string>
+    <string name="next">Продолжить</string>
     <string name="all_records">Все записи</string>
     <string name="go_start">В начало</string>
     <string name="error_reg">Введите логин или пароль</string>

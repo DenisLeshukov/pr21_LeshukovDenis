@@ -5,10 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
+    android:background="@color/green"
 
     >
 
     <TextView
+        android:textStyle="bold"
+        android:textColor="@color/white"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/register"
@@ -21,29 +24,34 @@
 
 
     <EditText
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
         android:id="@+id/login"
-        android:inputType="text"
         android:layout_width="800px"
-        android:hint="@string/input_login"
         android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="600px"
-        />
-    <EditText
-        android:id="@+id/password"
-        android:inputType="textPassword"
-        android:layout_width="800px"
-        android:hint="@string/input_password"
-        android:layout_height="wrap_content"
+        android:hint="@string/input_login"
+        android:inputType="text"
+        android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="800px"
-        />
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <androidx.appcompat.widget.AppCompatButton
+    <EditText
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:id="@+id/password"
+        android:layout_width="800px"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="800px"
+        android:hint="@string/input_password"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
 
         android:id="@+id/sign_in"
         android:layout_width="800px"

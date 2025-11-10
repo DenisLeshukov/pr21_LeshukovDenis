@@ -4,9 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".second_activity">
+    tools:context=".second_activity"
+    android:background="@color/green">
 
     <TextView
+        android:textStyle="bold"
+        android:textColor="@color/white"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
@@ -17,6 +20,8 @@
         android:textSize="23sp"
         />
     <TextView
+
+        android:textColor="@color/white"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="140px"
@@ -27,6 +32,8 @@
         android:textSize="16sp"
         />
     <Spinner
+
+        android:textColor="@color/white"
         android:id="@+id/myspinner"
         android:layout_width="800px"
         android:layout_height="wrap_content"
@@ -38,6 +45,10 @@
         />
 
     <EditText
+
+
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
         android:id="@+id/sum_value"
         android:layout_width="800px"
         android:layout_height="wrap_content"
@@ -50,6 +61,7 @@
         android:hint="@string/input_value"
         />
     <TextView
+        android:textColor="@color/white"
         android:layout_width="800px"
         android:layout_height="wrap_content"
         android:layout_marginLeft="140px"
@@ -60,6 +72,9 @@
         android:textSize="16sp"
         />
     <DatePicker
+
+        android:calendarTextColor="@color/white"
+        android:outlineSpotShadowColor="@color/white"
         android:id="@+id/mydate"
         android:layout_width="800px"
         android:layout_height="wrap_content"
@@ -71,12 +86,24 @@
         android:calendarViewShown="false"
         />
     <Button
-        android:id="@+id/next"
-        android:layout_width="800px"
+        android:textColor="@color/white"
+        android:id="@+id/save"
+        android:layout_width="400px"
         android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:text="@string/save_next"
+        android:layout_marginLeft="50dp"
+        android:text="@string/save"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="1650px"
+        />
+    <Button
+        android:textColor="@color/white"
+        android:id="@+id/next"
+        android:layout_width="400px"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="50dp"
+        android:text="@string/next"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="1650px"
         />

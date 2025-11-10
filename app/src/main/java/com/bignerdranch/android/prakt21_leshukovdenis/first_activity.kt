@@ -13,16 +13,15 @@ import androidx.fragment.app.Fragment
 import com.google.android.material.snackbar.Snackbar
 import com.google.gson.Gson
 import androidx.core.content.edit
+import android.widget.Button
 
 class first_activity : Fragment() {
-    private lateinit var button: androidx.appcompat.widget.AppCompatButton
+    private lateinit var button: Button
     private lateinit var login: EditText
     private lateinit var password: EditText
-    private val PREF_KEY_CREDENTIALS = "user_json"
-
-
-
+    private val PREF_KEY_CREDENTIALS = "user_json_login"
     private val gson = Gson()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -35,7 +34,7 @@ class first_activity : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         val view = inflater.inflate(R.layout.activity_first, container, false)
-        button = view.findViewById(R.id.sign_in) as androidx.appcompat.widget.AppCompatButton
+        button = view.findViewById(R.id.sign_in) as Button
         login = view.findViewById(R.id.login) as EditText
         password = view.findViewById(R.id.password) as EditText
 
@@ -56,7 +55,6 @@ class first_activity : Fragment() {
                 if (login.text.toString() != "" && password.text.toString() != "") {
                     val user = UserLog(loginText, passwordText)
                     val json = gson.toJson(user)
-
                     var prefs = PreferenceManager.getDefaultSharedPreferences(requireContext())
                     prefs.edit().putString(PREF_KEY_CREDENTIALS,json).apply()
 
